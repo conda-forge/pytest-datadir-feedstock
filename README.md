@@ -14,9 +14,7 @@ Summary: pytest plugin for manipulating test data directories and files.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-datadir-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-datadir-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-datadir-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-datadir-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-datadir-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-datadir-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-datadir-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-datadir-feedstock)
 
 Current release info
 ====================
