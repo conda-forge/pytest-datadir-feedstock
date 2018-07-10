@@ -1,6 +1,6 @@
 {% set name = "pytest-datadir" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "3e5d1892c68d0dfb6863e87d6a1f683e67be60802fee798a3ccae5dbda1ab378" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "450e60d0c70209659d342d7de0bf0987af7a15e705339f0109de41f5bd50d080" %}
 {% set ext = "tar.gz" %}
 
 package:
@@ -15,12 +15,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install . --no-deps --ignore-installed
 
 requirements:
   build:
-    - python
-    - setuptools
+    - pip
+    - setuptools_scm
   run:
     - python
     - pytest
@@ -31,7 +31,7 @@ test:
   imports:
     - pytest_datadir
   commands:
-    - py.test --help
+    - pytest --help
 
 about:
   home: https://github.com/gabrielcnr/pytest-datadir
@@ -45,4 +45,3 @@ extra:
     - edisongustavo
     - gqmelo
     - IgorTG
-    
