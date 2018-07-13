@@ -1,6 +1,6 @@
 {% set name = "pytest-datadir" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "450e60d0c70209659d342d7de0bf0987af7a15e705339f0109de41f5bd50d080" %}
+{% set version = "1.2.1" %}
+{% set sha256 = "392a99e6c19b7937e916d756c3dc958f193b81b561e019e641b7a1f4be0320b9" %}
 {% set ext = "tar.gz" %}
 
 package:
