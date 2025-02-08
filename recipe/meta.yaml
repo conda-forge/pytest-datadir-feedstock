@@ -1,15 +1,15 @@
 {% set name = "pytest-datadir" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.1" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1617ed92f9afda0c877e4eac91904b5f779d24ba8f5e438752e3ae39d8d2ee3f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 4d204cf93cfe62ddc37b19922df6c8c0f133c2899c224bd339b24920e84e7fd3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -17,10 +17,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - pytest
+    - pytest >=7.0
 
 test:
   requires:
