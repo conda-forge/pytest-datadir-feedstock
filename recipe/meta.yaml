@@ -1,12 +1,12 @@
 {% set name = "pytest-datadir" %}
-{% set version = "1.7.2" %}
+{% set version = "1.8.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 15f5228a35d0a3205e4968e75d3b9cca91762424e1eafc21eb637d380a48443e
+  sha256: 7a15faed76cebe87cc91941dd1920a9a38eba56a09c11e9ddf1434d28a0f78eb
 
 build:
   number: 0
